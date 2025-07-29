@@ -44,6 +44,5 @@ http://localhost:8080
 3. server handling :
     - Extracts input and banner.
     - Calls AsciiArt (input, banner).
-    - On success: stores result in a global Result variable and redirects to /artstyle. if there is an error re-renders the form and displays the error
     - Displays the stored ASCII result in a <pre>{{.Output}}</pre> block
     - Includes a Back button to return to /.
