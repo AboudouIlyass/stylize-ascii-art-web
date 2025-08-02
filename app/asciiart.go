@@ -29,7 +29,7 @@ var mu sync.Mutex
 func AsciiArt(input string, banner string) (string, error) {
 	input = strings.ReplaceAll(input, "\r", "")
 
-	if len(input) == 0 || len(input) > 200 || !(banner == "standard" || banner == "shadow" || banner == "thinkertoy") {
+	if len(input) == 0 || len(input) > 400 || !(banner == "standard" || banner == "shadow" || banner == "thinkertoy") {
 		return "", errors.New("input error")
 	}
 	
